@@ -10,15 +10,15 @@ on:
       - "example/**"
       - "include/**"
       - "src/**"
-  pull_request:
-    branches: [main]
-    paths:
-      - ".github/workflows/build-windows-x86_64.yml"
-      - "CMakeLists.txt"
-      - "CefViewCore"
-      - "example/**"
-      - "include/**"
-      - "src/**"
+#   pull_request:
+#     branches: [main]
+#     paths:
+#       - ".github/workflows/build-windows-x86_64.yml"
+#       - "CMakeLists.txt"
+#       - "CefViewCore"
+#       - "example/**"
+#       - "include/**"
+#       - "src/**"
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
