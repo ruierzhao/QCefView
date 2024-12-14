@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - ".github/workflows/build-windows-x86_64.yml"
+      # - ".github/workflows/build-windows-x86_64.yml"
       - "CMakeLists.txt"
       - "CefViewCore"
       - "example/**"
@@ -51,7 +51,8 @@ jobs:
       - name: Configure CMake
         # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
         # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
-        run: cmake -B ${{github.workspace}}/build -A x64 -DPROJECT_ARCH=x86_64 -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DBUILD_DEMO=ON -DCMAKE_INSTALL_PREFIX:PATH=${{github.workspace}}/out/install -DCEF_SDK_VERSION="112.3.0+gb09c4ca+chromium-112.0.5615.165"
+        # run: cmake -B ${{github.workspace}}/build -A x64 -DPROJECT_ARCH=x86_64 -DCMAKE_BUILD_TYPE=${{env.BUILD_TYPE}} -DBUILD_DEMO=ON -DCMAKE_INSTALL_PREFIX:PATH=${{github.workspace}}/out/install -DCEF_SDK_VERSION="112.3.0+gb09c4ca+chromium-112.0.5615.165"
+        run: cmake -B ${{github.workspace}}/build -A x64 -DPROJECT_ARCH=x86_64 -DBUILD_DEMO=OFF -DCMAKE_INSTALL_PREFIX:PATH=${{github.workspace}}/out/install
 
       - name: Build
         # 设置 DCEF_SDK_VERSION 的值为以下(会自动拼接处理)
