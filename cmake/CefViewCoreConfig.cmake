@@ -26,7 +26,7 @@ set(CMAKE_BUILD_TYPE "Debug")
 # set(CEF_SDK_VERSION "102.0.10+gf249b2e+chromium-102.0.5005.115")  # IME poisition incorrect
 # set(CEF_SDK_VERSION "103.0.12+g8eb56c7+chromium-103.0.5060.134")  # IME poisition incorrect
 # set(CEF_SDK_VERSION "104.4.26+g4180781+chromium-104.0.5112.102")  # GOOD
-set(CEF_SDK_VERSION "105.3.39+g2ec21f9+chromium-105.0.5195.127")  # GOOD
+# set(CEF_SDK_VERSION "105.3.39+g2ec21f9+chromium-105.0.5195.127")  # GOOD
 # set(CEF_SDK_VERSION "106.1.1+g5891c70+chromium-106.0.5249.119")   # GOOD
 # set(CEF_SDK_VERSION "107.1.12+g65b79a6+chromium-107.0.5304.122")  # GOOD
 # set(CEF_SDK_VERSION "108.4.13+ga98cd4c+chromium-108.0.5359.125")  # GOOD
@@ -38,7 +38,7 @@ set(CEF_SDK_VERSION "105.3.39+g2ec21f9+chromium-105.0.5195.127")  # GOOD
 # set(CEF_SDK_VERSION "119.4.7+g55e15c8+chromium-119.0.6045.199")   # GOOD
 # set(CEF_SDK_VERSION "120.1.6+gf08b1fd+chromium-120.0.6099.71")    # GOOD
 # set(CEF_SDK_VERSION "121.3.15+g4d3b0b4+chromium-121.0.6167.184")  # GOOD
-# set(CEF_SDK_VERSION "122.1.13+gde5b724+chromium-122.0.6261.130")  # GOOD
+set(CEF_SDK_VERSION "122.1.13+gde5b724+chromium-122.0.6261.130")  # GOOD
 # set(CEF_SDK_VERSION "123.0.13+gfc703fb+chromium-123.0.6312.124")  # NOT TEST
 # set(CEF_SDK_VERSION "124.3.9+g9bd638f+chromium-124.0.6367.207")   # NOT TEST
 # set(CEF_SDK_VERSION "125.0.22+gc410c95+chromium-125.0.6422.142")  # NOT TEST
