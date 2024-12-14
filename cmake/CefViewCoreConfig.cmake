@@ -6,7 +6,8 @@ FetchContent_Declare(
     GIT_REPOSITORY https://github.com/CefView/CefViewCore.git
     GIT_TAG a6a6d62fd5783297ed0d3ffb8379dec4f2ea1143
 )
-
+# Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
+set(CMAKE_BUILD_TYPE "Debug")
 # set CEF version to be used
 # https://cef-builds.spotifycdn.com/index.html
 # https://bitbucket.org/chromiumembedded/cef/wiki/BranchesAndBuilding.md
@@ -25,11 +26,11 @@ FetchContent_Declare(
 # set(CEF_SDK_VERSION "102.0.10+gf249b2e+chromium-102.0.5005.115")  # IME poisition incorrect
 # set(CEF_SDK_VERSION "103.0.12+g8eb56c7+chromium-103.0.5060.134")  # IME poisition incorrect
 # set(CEF_SDK_VERSION "104.4.26+g4180781+chromium-104.0.5112.102")  # GOOD
-# set(CEF_SDK_VERSION "105.3.39+g2ec21f9+chromium-105.0.5195.127")  # GOOD
+set(CEF_SDK_VERSION "105.3.39+g2ec21f9+chromium-105.0.5195.127")  # GOOD
 # set(CEF_SDK_VERSION "106.1.1+g5891c70+chromium-106.0.5249.119")   # GOOD
 # set(CEF_SDK_VERSION "107.1.12+g65b79a6+chromium-107.0.5304.122")  # GOOD
 # set(CEF_SDK_VERSION "108.4.13+ga98cd4c+chromium-108.0.5359.125")  # GOOD
-set(CEF_SDK_VERSION "109.1.18+gf1c41e4+chromium-109.0.5414.120")  # GOOD
+# set(CEF_SDK_VERSION "109.1.18+gf1c41e4+chromium-109.0.5414.120")  # GOOD
 # set(CEF_SDK_VERSION "110.0.32+g291f1df+chromium-110.0.5481.180")  # GOOD
 # set(CEF_SDK_VERSION "111.2.7+gebf5d6a+chromium-111.0.5563.148")   # GOOD
 # set(CEF_SDK_VERSION "112.3.0+gb09c4ca+chromium-112.0.5615.165")   # GOOD
