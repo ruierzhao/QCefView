@@ -88,7 +88,7 @@ jobs:
         # set(DEFAULT_CEF_SDK_VERSION "126.2.18+g3647d39+chromium-126.0.6478.183")  # NOT TEST
         # set(DEFAULT_CEF_SDK_VERSION "127.3.5+g114ea2a+chromium-127.0.6533.120") # GOOD
         # Build your program with the given configuration
-        run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} -DCEF_SDK_VERSION="112.3.0+gb09c4ca+chromium-112.0.5615.165"
+        run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} 
 
       - name: Install
         if: github.event_name != 'pull_request'
